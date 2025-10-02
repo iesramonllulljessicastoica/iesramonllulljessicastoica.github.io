@@ -6,6 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Javascript</title>
     <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <h1>Javascript</h1>
     <a href="index.html">Index</a>
     <a href="tables.html">taules</a>
     <a href="formularis.html">formularis</a>
@@ -13,18 +17,21 @@
     <a href="balmdeoro.html">balon de oro</a>
     <a href="javascript.html">javascript</a>
     <a href="capas.html">capas</a>
-</head>
-<body>
-    <h1>Javascript</h1>
     <p>Javascript és un llenguatge de programació per a pàgines web</p>
     <p>Ens ajuda a que les nostres pàgines siguin interaccionables</p>
-    <script>
-        alert("soc un missatge d'alerta");
-    </script>
+  
     <p>Ara veureu que passa quan clicam en aquest botó</p>
     <button onclick="alert('Hola gràcies per clicar')">
         clica'm
-
     </button>
+    <h2>Botó que mostra la data</h2>
+    <button onclick="document.getElementById('data').innerHTML = Date()">Mostra la data i hora</button>
+    <p id="data"> </p>
+    <h2>Canviar una imatge</h2>
+    <p>tria qui mereixia el balon d'or</p>
+    <img width="200px" id="foto" src="dembele.jpg" alt="">
+    <button onclick="document.getElementById('foto').src ='lamine.jpg'">Lamine</button>
+    <button onclick="document.getElementById('foto').src ='dembele.jpg'">Dembele</button>
+
 </body>
 </html>
